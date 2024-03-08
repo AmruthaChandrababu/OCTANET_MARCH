@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a45531;
+        }
+        nav {
+            background-color: #f1f2f404;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #6483f3;
+        }
+        .banner {
+            background-image: url('https://wallpapercave.com/wp/hLggdrH.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+        .banner h1 {
+            font-size: 72px;
+            margin-bottom: 20px;
+        }
+        .services {
+            padding: 50px 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service {
+            width: 30%;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .service:hover {
+            transform: translateY(-10px);
+        }
+        .service img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: -60px;
+            width: 100%;
+            transition: bottom 0.3s ease;
+            z-index: 999;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Destinations</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="banner">
+        <h1>Explore the world with us</h1>
+    </div>
+    <div class="services">
+        <div class="service">
+            <img src="https://images.pexels.com/photos/62623/wing-plane-flying-airplane-62623.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Flight Booking">
+            <h3>Flight Booking</h3>
+            <p>We offer hassle-free flight booking services to your dream destinations.</p>
+        </div>
+        <div class="service">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWxzfGVufDB8fDB8fHww" alt="Hotel Reservations">
+            <h3>Hotel Reservations</h3>
+            <p>Find the perfect accommodation with our wide range of hotel options.</p>
+        </div>
+        <div class="service">
+            <img src="https://images.pexels.com/photos/1371360/pexels-photo-1371360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Tour Packages">
+            <h3>Tour Packages</h3>
+            <p>Explore exciting tour packages curated just for you.</p>
+        </div>
+    </div>
+    <footer>
+        
+        <p>&copy; 2024 Travel Agency. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            let footer = document.querySelector('footer');
+            if (window.scrollY > 100) {
+                footer.style.bottom = '0';
+            } else {
+                footer.style.bottom = '-60px';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* Your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://hbr.org/resources/images/article_assets/2020/08/Aug20_06_84753778.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.add-task {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.add-task input[type="text"],
+.add-task input[type="date"],
+.add-task select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.add-task button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-task button:hover {
+    background-color: #45a049;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.task-item.completed {
+    background: linear-gradient(135deg, #c9c9c9, #f5f5f5);
+    text-decoration: line-through;
+}
+
+.task-item span {
+    margin-right: 10px;
+    color: #333;
+}
+
+.task-item button {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    padding: 8px 15px;
+    border: none;
+    background-color: #ff6961;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.task-item button:hover {
+    background-color: #ff4d4d;
+}
+
+.priority-high {
+    color: #ff6961;
+}
+
+.priority-medium {
+    color: #ffa500;
+}
+
+.priority-low {
+    color: #7cfc00;
+}
